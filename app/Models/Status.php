@@ -27,7 +27,7 @@ class Status extends Model
 
 		if ($result) {
 			if (filter_var($status->email, FILTER_VALIDATE_EMAIL)) {
-				Status::sendEmail($status->email);
+				//Status::sendEmail($status->email);
 			}
 		}
 
