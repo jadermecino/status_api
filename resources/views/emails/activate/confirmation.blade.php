@@ -1,0 +1,1 @@
+<h1>Registered complete</h1>

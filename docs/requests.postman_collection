@@ -1,0 +1,66 @@
+{
+	"variables": [],
+	"info": {
+		"name": "REST API",
+		"_postman_id": "96b57c76-b64b-3ce3-c608-2a59ff98e74c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"url": "http://localhost:8001/api/status",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "marcos.perez@gmail.com",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "status",
+							"value": "te llegó mi mensaje?",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"request": {
+				"url": "http://localhost:8001/api/status?q=mensaje&r=&p=1",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"url": "http://localhost:8001/api/status/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
